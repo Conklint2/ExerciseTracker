@@ -1,13 +1,14 @@
 <header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-1">
-                <img src="logo.jpg" style="width:100%" />
+        <div class="container">
+            <div class="row">
+                <h2 class="col-md-12">Insert Witty Title Here</h2>
             </div>
-            <h2 class="col-md-11">What do you Meme?</h2>
+            
+            <div id="nav-placeholder"></div>
         </div>
-        
-        <div id="nav-placeholder"></div>
-    </div>
-</header>
-<script src="navigation.js"></script>
+    </header>
+<script>
+    $(function(){
+        $("#nav-placeholder").load("_nav.html");
+    })
+</script>

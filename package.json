@@ -1,0 +1,22 @@
+{
+  "name": "exercisetracker",
+  "version": "1.0.0",
+  "description": "project for fall 17",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Conklint2/ExerciseTracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Conklint2/ExerciseTracker/issues"
+  },
+  "homepage": "https://github.com/Conklint2/ExerciseTracker#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}

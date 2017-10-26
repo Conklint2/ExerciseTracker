@@ -1,7 +1,10 @@
-const http = require("http");
-const _ = require("lodash");
-const handler = require("./httpHandler.js");
+const express = require("express");
+const server = express();
+const routineController = require("./routineController")
 
-const server = http.createServer(handler.main);
+server.use("/routines", routineController.router);
+server.use("/home", express.static("./client"))
 
 server.listen(3000);
+
+console.log("http://localhost:3000");

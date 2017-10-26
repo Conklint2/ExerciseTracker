@@ -2,9 +2,11 @@
   "name": "exercisetracker",
   "version": "1.0.0",
   "description": "project for fall 17",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass ./client/src --output client/dist",
+    "webpack:main": "webpack client/src/main.js --output-filename client/dist/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +20,24 @@
   "homepage": "https://github.com/Conklint2/ExerciseTracker#readme",
   "dependencies": {
     "express": "^4.15.5",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "bootstrap-4": "^4.0.0",
+    "popper.js": "^1.12.6"
   },
   "devDependencies": {
-    "eslint": "^4.7.0"
+    "@types/express":"^4.0.38",
+    "@types/node":"^8.0.47",
+    "@types/body-parser":"^1.16.6",
+    "@types/jquery":"^3.2.15",
+    "eslint": "^4.7.0",
+    "webpack": "^3.6.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "css-loader": "^0.28.7",
+    "style-loader": "^0.18.2",
+    "extract-text-webpack-plugin":"^3.0.0",
+    "typescript":"^2.5.3",
+    "ts-loader":"^2.3.7"
+
   }
 }
